@@ -1,28 +1,15 @@
 {
 	"compiler": {
-		"version": "0.8.8+commit.dddeac2f"
+		"version": "0.8.26+commit.8a97fa7a"
 	},
 	"language": "Solidity",
 	"output": {
 		"abi": [
 			{
-				"inputs": [],
-				"name": "add",
-				"outputs": [
-					{
-						"internalType": "uint32",
-						"name": "",
-						"type": "uint32"
-					}
-				],
-				"stateMutability": "pure",
-				"type": "function"
-			},
-			{
 				"inputs": [
 					{
 						"internalType": "uint256",
-						"name": "num",
+						"name": "_favNum",
 						"type": "uint256"
 					},
 					{
@@ -37,13 +24,24 @@
 				"type": "function"
 			},
 			{
-				"inputs": [],
-				"name": "getSec",
-				"outputs": [
+				"inputs": [
 					{
 						"internalType": "uint256",
 						"name": "",
 						"type": "uint256"
+					}
+				],
+				"name": "listOfPeople",
+				"outputs": [
+					{
+						"internalType": "uint256",
+						"name": "favNum",
+						"type": "uint256"
+					},
+					{
+						"internalType": "string",
+						"name": "name",
+						"type": "string"
 					}
 				],
 				"stateMutability": "view",
@@ -69,32 +67,8 @@
 				"type": "function"
 			},
 			{
-				"inputs": [
-					{
-						"internalType": "uint256",
-						"name": "",
-						"type": "uint256"
-					}
-				],
-				"name": "persons",
-				"outputs": [
-					{
-						"internalType": "uint256",
-						"name": "FavNum",
-						"type": "uint256"
-					},
-					{
-						"internalType": "string",
-						"name": "name1",
-						"type": "string"
-					}
-				],
-				"stateMutability": "view",
-				"type": "function"
-			},
-			{
 				"inputs": [],
-				"name": "reterive",
+				"name": "retrieve",
 				"outputs": [
 					{
 						"internalType": "uint256",
@@ -132,9 +106,9 @@
 	},
 	"settings": {
 		"compilationTarget": {
-			"contracts/SimpleStorage.sol": "SimpleStorage"
+			"contracts/SimpleStorage2.sol": "SimpleStorage2"
 		},
-		"evmVersion": "london",
+		"evmVersion": "cancun",
 		"libraries": {},
 		"metadata": {
 			"bytecodeHash": "ipfs"
@@ -146,12 +120,12 @@
 		"remappings": []
 	},
 	"sources": {
-		"contracts/SimpleStorage.sol": {
-			"keccak256": "0x776a5c4011a8d3f3fb87eea77e87cb1138d34c5581949d1558ebf01f0a733032",
+		"contracts/SimpleStorage2.sol": {
+			"keccak256": "0x3491f1a3ef39bbba3b928e30ab70c484e9e32dadacf70af21a301c5c13017d79",
 			"license": "MIT",
 			"urls": [
-				"bzz-raw://a830caa08ff7026536afd5d5af0f33fdf76885c172d063ab82dd99ccbcbb822b",
-				"dweb:/ipfs/QmY7nwrD4LV4vrB3UUpmnJJpCHT75aruSdiKuPQ9wJXDp9"
+				"bzz-raw://4dc3ae3f2bb5f9fd23eefa042ba393a2acb836cf6ef8294a9020d918bef568fb",
+				"dweb:/ipfs/QmVfmoUZU2ZnmnGeLeYvgFSUm8Rza8LBSCosfB8gVdMi6c"
 			]
 		}
 	},
