@@ -6,13 +6,13 @@
 // SPDX-License-Identifier: MIT
 pragma solidity ^0.8.18;
 
-import {PriceConvertor} from "./PriceConvertor.sol";
+import {PriceConverter} from "./PriceConverter.sol";
 
 error notOwner();
 
 contract FundMe {
     // all the uint256 can use the library PriceConvertor 
-    using PriceConvertor for uint256;
+    using PriceConverter for uint256;
 
     // fund() :-> Get Funds from the user and setting the minimum funding value with it 
     // By adding the keyword payable we make the contract capable of holding value
